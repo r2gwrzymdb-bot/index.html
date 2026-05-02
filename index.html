@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Ayat</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- CINEMATIC MUSIC -->
+<audio autoplay loop id="music">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_c8b6f7c8c6.mp3?filename=soft-piano-ambient-110397.mp3" type="audio/mp3">
+</audio>
+
+<!-- BACKGROUND VIDEO -->
+<video autoplay muted loop>
+  <source src="https://cdn.coverr.co/videos/coverr-a-couple-walking-on-the-beach-1667/1080p.mp4">
+</video>
+
+<div class="overlay"></div>
+
+<!-- SCENES -->
+<div class="scene active" id="s1">
+  <div>
+    <h1 class="fade">
+      This is not just a website…<br>
+      it’s a feeling made for Ayat.
+    </h1>
+    <button onclick="next(2)">Start</button>
+  </div>
+</div>
+
+<div class="scene" id="s2">
+  <div>
+    <h1 class="fade">
+      Before we begin…<br>
+      how do you want to feel?
+    </h1>
+
+    <div class="row">
+      <button onclick="next(3)">💖 Loved</button>
+      <button onclick="next(3)">🌙 Understood</button>
+      <button onclick="next(3)">✨ Surprised</button>
+    </div>
+  </div>
+</div>
+
+<div class="scene" id="s3">
+  <div>
+    <h1>
+      انا عارف اني اوقات كتير بزعلك و انك بتشوفي ده قلة اهتمام او زعلك ده حاجه بسيطه بالنسبالي ، ومقدرش الومك لو وصلك الاحساس ده<br><br>
+
+      بس انا مقصدش ابدا احسسك كده و انتي فعلا اغلي انسانه ف حياتي<br><br>
+
+      ميفرقليش اي حد تاني وعشان كده بحاول اثبتلك ده<br><br>
+
+      انا بحبك و نفسي اوي اكمل حياتي معاكي
+    </h1>
+
+    <div class="row">
+      <button onclick="yes()">YES 💖</button>
+      <button onclick="no()">🥺 NO</button>
+    </div>
+  </div>
+</div>
+
+<div class="scene" id="s4">
+  <div>
+    <h1 class="big">
+      💖 She said YES…<br><br>
+      now everything feels different.
+    </h1>
+
+    <div class="row">
+      <button onclick="future()">Explore Future</button>
+      <button onclick="restart()">Replay</button>
+    </div>
+  </div>
+</div>
+
+<div class="scene" id="s5">
+  <div>
+    <h1 class="big">
+      💔 I understand…<br><br>
+      but you’ll always matter.
+    </h1>
+
+    <div class="row">
+      <button onclick="calm()">Calm Mode</button>
+      <button onclick="restart()">Replay</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
